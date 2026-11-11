@@ -4,86 +4,223 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Texas Talent Accelerator | Dashboards</title>
+
+  <title>Texas Talent Accelerator | Workforce Dashboards</title>
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      background: #f4f6f8;
-      color: #243447;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f9;
+      color: #263746;
     }
+
     header {
-      background: #003f5c;
+      background: linear-gradient(120deg, #003b5c, #087e8b);
       color: white;
-      padding: 40px 8%;
+      padding: 65px 8%;
     }
-    header h1 { margin-bottom: 10px; }
+
+    header .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 13px;
+      font-weight: bold;
+      opacity: 0.85;
+    }
+
+    header h1 {
+      font-size: 38px;
+      margin: 15px 0;
+    }
+
+    header p {
+      max-width: 750px;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
     main {
-      max-width: 1100px;
-      margin: 40px auto;
-      padding: 0 20px;
+      max-width: 1150px;
+      margin: 45px auto;
+      padding: 0 25px;
     }
-    .dashboards {
+
+    .section-heading {
+      margin-bottom: 25px;
+    }
+
+    .section-heading h2 {
+      font-size: 27px;
+      margin-bottom: 8px;
+    }
+
+    .section-heading p {
+      color: #667788;
+      line-height: 1.6;
+    }
+
+    .dashboard-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 22px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
     }
+
     .card {
       background: white;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px #00000012;
+      padding: 28px;
+      border-radius: 12px;
+      border: 1px solid #e2e8ee;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+      transition: transform 0.2s, box-shadow 0.2s;
     }
-    .card h2 { color: #005b7f; }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 22px rgba(0,0,0,0.09);
+    }
+
+    .card .number {
+      color: #07818a;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .card h3 {
+      color: #004b68;
+      font-size: 21px;
+      margin: 16px 0 12px;
+    }
+
+    .card p {
+      color: #5d6c79;
+      line-height: 1.7;
+      min-height: 75px;
+    }
+
     .card a {
       display: inline-block;
-      margin-top: 12px;
-      color: #0077a8;
+      margin-top: 15px;
+      color: #007c91;
       font-weight: bold;
       text-decoration: none;
     }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
+    .about {
+      margin-top: 55px;
+      padding: 30px;
+      background: #e8f1f4;
+      border-radius: 12px;
+      line-height: 1.7;
+    }
+
     footer {
       text-align: center;
-      padding: 30px;
-      color: #64748b;
+      padding: 30px 15px;
+      color: #718096;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 45px 7%;
+      }
+
+      header h1 {
+        font-size: 29px;
+      }
     }
   </style>
 </head>
+
 <body>
+
   <header>
-    <h1>Texas Talent Accelerator</h1>
-    <h2>Workforce Intelligence & Analytics</h2>
-    <p>Explore interactive dashboards on employment, workforce trends,
-       higher education, and regional economic development.</p>
+    <div class="eyebrow">Texas Talent Accelerator | UNT</div>
+
+    <h1>Workforce Intelligence & Analytics</h1>
+
+    <p>
+      Explore interactive dashboards providing insights into
+      North Texas employment, occupational trends, workforce demand,
+      and higher education alignment.
+      Turning workforce data into actionable intelligence.
+    </p>
   </header>
 
   <main>
-    <h2>Explore Our Dashboards</h2>
-    <div class="dashboards">
 
-      <section class="card">
-        <h2>North Texas Workforce</h2>
-        <p>Explore regional workforce trends, occupations, and labor market demand.</p>
-        <a href="occupation-trend/">Open Dashboard →</a>
-      </section>
+    <div class="section-heading">
+      <h2>Explore Our Dashboards</h2>
+      <p>
+        Interactive data products supporting workforce research,
+        regional economic development, and higher education planning.
+      </p>
+    </div>
 
-      <section class="card">
-        <h2>Employment Overview</h2>
-        <p>Explore employment patterns and regional economic indicators.</p>
-        <a href="employment-overview/">Open Dashboard →</a>
-      </section>
+    <div class="dashboard-grid">
 
-      <section class="card">
-        <h2>Higher Education</h2>
-        <p>Explore workforce alignment, educational programs, and talent pipelines.</p>
-        <a href="higher-education/">Open Dashboard →</a>
-      </section>
+      <div class="card">
+        <div class="number">01 | EMPLOYMENT</div>
+        <h3>Employment Overview</h3>
+        <p>
+          Explore regional employment patterns, labor market indicators,
+          and economic performance across North Texas.
+        </p>
+        <a href="employment-overview/">
+          Explore Dashboard →
+        </a>
+      </div>
+
+      <div class="card">
+        <div class="number">02 | HIGHER EDUCATION</div>
+        <h3>Higher Education</h3>
+        <p>
+          Examine workforce and education alignment, talent pipelines,
+          and opportunities for academic program planning.
+        </p>
+        <a href="higher-education/">
+          Explore Dashboard →
+        </a>
+      </div>
+
+      <div class="card">
+        <div class="number">03 | OCCUPATIONS</div>
+        <h3>Occupation Trends</h3>
+        <p>
+          Analyze occupational growth, emerging workforce demand,
+          employment changes, and regional labor market trends.
+        </p>
+        <a href="occupation-trend/">
+          Explore Dashboard →
+        </a>
+      </div>
 
     </div>
+
+    <div class="about">
+      <h2>About Texas Talent Accelerator</h2>
+      <p>
+        The Texas Talent Accelerator connects workforce intelligence,
+        higher education, employers, and regional partners to support
+        data-informed decisions about the future of work and talent.
+      </p>
+    </div>
+
   </main>
 
   <footer>
-    Texas Talent Accelerator | Workforce Intelligence
+    Texas Talent Accelerator | University of North Texas
   </footer>
+
 </body>
 </html>
