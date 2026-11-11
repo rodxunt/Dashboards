@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Texas Talent Accelerator | Dashboards</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f6f8;
+      color: #243447;
+    }
+    header {
+      background: #003f5c;
+      color: white;
+      padding: 40px 8%;
+    }
+    header h1 { margin-bottom: 10px; }
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .dashboards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+    }
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px #00000012;
+    }
+    .card h2 { color: #005b7f; }
+    .card a {
+      display: inline-block;
+      margin-top: 12px;
+      color: #0077a8;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Texas Talent Accelerator</h1>
+    <h2>Workforce Intelligence & Analytics</h2>
+    <p>Explore interactive dashboards on employment, workforce trends,
+       higher education, and regional economic development.</p>
+  </header>
+
+  <main>
+    <h2>Explore Our Dashboards</h2>
+    <div class="dashboards">
+
+      <section class="card">
+        <h2>North Texas Workforce</h2>
+        <p>Explore regional workforce trends, occupations, and labor market demand.</p>
+        <a href="occupation-trend/">Open Dashboard →</a>
+      </section>
+
+      <section class="card">
+        <h2>Employment Overview</h2>
+        <p>Explore employment patterns and regional economic indicators.</p>
+        <a href="employment-overview/">Open Dashboard →</a>
+      </section>
+
+      <section class="card">
+        <h2>Higher Education</h2>
+        <p>Explore workforce alignment, educational programs, and talent pipelines.</p>
+        <a href="higher-education/">Open Dashboard →</a>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    Texas Talent Accelerator | Workforce Intelligence
+  </footer>
+</body>
+</html>
